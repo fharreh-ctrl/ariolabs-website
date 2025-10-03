@@ -83,12 +83,23 @@
             font-size: 1.1rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(72, 187, 120, 0.4);
+            margin: 0 10px 10px 0;
         }
         
         .cta-button:hover {
             background: #38a169;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(72, 187, 120, 0.6);
+        }
+        
+        .cta-button.secondary {
+            background: #667eea;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .cta-button.secondary:hover {
+            background: #5a67d8;
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
         }
         
         .services {
@@ -105,7 +116,7 @@
         
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -117,10 +128,29 @@
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         
         .service-card:hover {
             transform: translateY(-5px);
+        }
+        
+        .service-card.featured {
+            border: 3px solid #48bb78;
+            transform: scale(1.05);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #48bb78;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
         }
         
         .service-icon {
@@ -139,6 +169,44 @@
             color: #48bb78;
             font-weight: 700;
             margin: 1rem 0;
+        }
+        
+        .price.free {
+            color: #e53e3e;
+            font-size: 2.5rem;
+        }
+        
+        .duration {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .book-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .book-button:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .book-button.primary {
+            background: #48bb78;
+            font-size: 1.1rem;
+            padding: 15px 30px;
+        }
+        
+        .book-button.primary:hover {
+            background: #38a169;
         }
         
         .about {
@@ -243,6 +311,10 @@
             .stats {
                 justify-content: center;
             }
+            
+            .service-card.featured {
+                transform: none;
+            }
         }
     </style>
 </head>
@@ -261,8 +333,9 @@
     <section class="hero">
         <div class="container">
             <h1>Transform Your Business with AI</h1>
-            <p>Professional AI implementation and consultation services for small businesses in the Philippines</p>
-            <a href="#contact" class="cta-button">Book Free Consultation - ₱1,500</a>
+            <p>Professional AI implementation and consultation services for Filipino small businesses</p>
+            <a href="https://calendly.com/ariolabs/ai-consultation-ph" target="_blank" class="cta-button">Book FREE 20-Min Discovery Call</a>
+            <a href="#services" class="cta-button secondary">View All Services</a>
         </div>
     </section>
     
@@ -270,25 +343,41 @@
         <div class="container">
             <h2 class="section-title">Our AI Solutions</h2>
             <div class="service-grid">
-                <div class="service-card">
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
                     <div class="service-icon">🚀</div>
-                    <h3>AI Quick Consultation</h3>
+                    <h3>FREE Discovery Call</h3>
+                    <div class="price free">FREE</div>
+                    <div class="duration">20 minutes • Video call</div>
+                    <p>Quick assessment of your business and AI opportunities. Perfect starting point to see if AI can help your operations!</p>
+                    <a href="https://calendly.com/ariolabs/ai-consultation-ph" target="_blank" class="book-button primary">Book Free Call Now</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>AI Strategy Consultation</h3>
                     <div class="price">₱1,500</div>
-                    <p>1-hour consultation to identify AI opportunities in your business. Get practical recommendations you can implement immediately.</p>
+                    <div class="duration">1 hour • Deep dive session</div>
+                    <p>Comprehensive analysis of your business processes with detailed AI implementation roadmap and specific tool recommendations.</p>
+                    <a href="mailto:hello@ariolabs.tech?subject=AI Strategy Consultation Booking" class="book-button">Book Consultation</a>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">⚙️</div>
                     <h3>AI Setup Package</h3>
                     <div class="price">₱7,500</div>
+                    <div class="duration">1 week implementation</div>
                     <p>Complete setup of 3-5 AI tools for your business operations. Includes training and basic automation workflows.</p>
+                    <a href="mailto:hello@ariolabs.tech?subject=AI Setup Package Inquiry" class="book-button">Get Started</a>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">🎯</div>
                     <h3>Custom AI Implementation</h3>
                     <div class="price">₱25,000</div>
+                    <div class="duration">2-4 weeks transformation</div>
                     <p>Full AI transformation with custom workflows, team training, and ongoing support. Perfect for growing businesses.</p>
+                    <a href="mailto:hello@ariolabs.tech?subject=Custom AI Implementation Inquiry" class="book-button">Learn More</a>
                 </div>
             </div>
         </div>
@@ -301,6 +390,7 @@
                     <h2>Why Choose ArioLabs?</h2>
                     <p>We specialize in making AI accessible for Filipino small and medium businesses. No complex jargon, no overpriced solutions - just practical AI implementations that deliver real results.</p>
                     <p>Our approach focuses on immediate value. Every AI solution we implement pays for itself within 30-90 days through improved efficiency and reduced operational costs.</p>
+                    <p><strong>Start with a FREE 20-minute discovery call</strong> to see exactly how AI can transform your specific business operations!</p>
                     
                     <div class="stats">
                         <div class="stat">
@@ -330,8 +420,8 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2>Ready to Transform Your Business?</h2>
-            <p>Book your AI consultation today and discover how artificial intelligence can revolutionize your operations</p>
-            <a href="mailto:hello@ariolabs.tech?subject=AI Consultation Booking&body=Hi! I'm interested in booking an AI consultation for my business." class="cta-button">Book Your Consultation Now</a>
+            <p>Start with a FREE 20-minute discovery call to see how AI can revolutionize your operations</p>
+            <a href="https://calendly.com/ariolabs/ai-consultation-ph" target="_blank" class="cta-button">Book Your FREE Discovery Call</a>
             
             <div class="contact-info">
                 <div class="contact-item">
