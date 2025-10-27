@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('./fonts/FKGroteskNeue.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'FKGroteskNeue', sans-serif;
+}
