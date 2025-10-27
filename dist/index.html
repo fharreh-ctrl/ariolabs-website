@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArioLabs - AI Automation Solutions</title>
-    <meta name="description" content="Save 10+ Hours a Week Without Hiring More Staff. Affordable AI automation for U.S. and Asia-based businesses.">
-    <meta property="og:title" content="ArioLabs - AI Automation Solutions">
-    <meta property="og:description" content="Save 10+ Hours a Week Without Hiring More Staff. Affordable AI automation for U.S. and Asia-based businesses.">
-    <meta property="og:type" content="website">
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArioLabs - AI Automation Solutions</title>
+  <meta name="description" content="Save 10+ Hours a Week Without Hiring More Staff. Affordable AI automation for U.S. and Asia-based businesses.">
+  <meta property="og:title" content="ArioLabs - AI Automation Solutions">
+  <meta property="og:description" content="Save 10+ Hours a Week Without Hiring More Staff. Affordable AI automation for U.S. and Asia-based businesses.">
+  <meta property="og:type" content="website">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              heading: ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              'deep-navy': '#0F172A',
-              'electric-teal': '#06B6D4',
-              'light-teal': '#67E8F9',
-              'soft-gray': '#F1F5F9',
-              'dark-gray': '#334155',
-              'success-green': '#10B981',
-              'warning-orange': '#F59E0B',
-            }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (temporary until PostCSS build is added) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'deep-navy': '#0F172A',
+            'electric-teal': '#06B6D4',
+            'light-teal': '#67E8F9',
+            'soft-gray': '#F1F5F9',
+            'dark-gray': '#334155',
+            'success-green': '#10B981',
+            'warning-orange': '#F59E0B',
           }
         }
       }
-    </script>
+    }
+  </script>
 
-<script type="importmap">
-{
-  "imports": {
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.548.0",
-    "@hookform/resolvers/": "https://aistudiocdn.com/@hookform/resolvers@^5.2.2/",
-    "zod": "https://aistudiocdn.com/zod@^4.1.12",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
-    "react-hook-form": "https://aistudiocdn.com/react-hook-form@^7.65.0",
-    "react-calendly": "https://aistudiocdn.com/react-calendly@^4.4.0"
+  <script type="importmap">
+  {
+    "imports": {
+      "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+      "react/": "https://aistudiocdn.com/react@^19.2.0/",
+      "react": "https://aistudiocdn.com/react@^19.2.0",
+      "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+      "lucide-react": "https://aistudiocdn.com/lucide-react@^0.548.0",
+      "@hookform/resolvers/": "https://aistudiocdn.com/@hookform/resolvers@^5.2.2/",
+      "zod": "https://aistudiocdn.com/zod@^4.1.12",
+      "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+      "react-hook-form": "https://aistudiocdn.com/react-hook-form@^7.65.0",
+      "react-calendly": "https://aistudiocdn.com/react-calendly@^4.4.0"
+    }
   }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-Dm4dIiqo.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DXtDZt54.css">
+  </script>
+
+  <!-- ✅ Fixed relative paths -->
+  <script type="module" crossorigin src="./assets/index-Dm4dIiqo.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DXtDZt54.css">
 </head>
 <body>
-    <div id="root"></div>
+  <div id="root"></div>
 </body>
 </html>
