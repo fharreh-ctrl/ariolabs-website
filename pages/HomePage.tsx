@@ -69,15 +69,15 @@ const HomePage: React.FC = () => {
             <section className="bg-gradient-to-br from-deep-navy to-[#1E293B] text-white py-24 md:py-32">
                 <div className="container mx-auto max-w-7xl px-4 md:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
                     <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-                        <p className="text-sm font-bold uppercase text-electric-teal tracking-widest mb-4">AI AUTOMATION FOR SMALL BUSINESSES</p>
-                        <h1 className="text-5xl md:text-6xl font-bold font-heading leading-tight mb-6">Save 10+ Hours a Week Without Hiring More Staff</h1>
-                        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">Affordable AI automation for U.S. and Asia-based businesses — delivered by expert teams in days, not months.</p>
+                        <p className="text-sm font-bold uppercase text-electric-teal tracking-widest mb-4">INQUIRY-FLOW MINI-AUDIT</p>
+                        <h1 className="text-5xl md:text-6xl font-bold font-heading leading-tight mb-6">Find the Leaks in Your Inquiry Flow Before They Cost You Clients</h1>
+                        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">ArioLabs reviews your contact, booking, and follow-up flow, then sends a simple 1-page mini-audit with 3 practical fixes. No call needed.</p>
                         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                             <Link to="/schedule" className="text-center bg-electric-teal text-white font-bold py-4 px-8 rounded-lg hover:bg-light-teal hover:text-deep-navy transition-all duration-300 transform hover:scale-105">
-                                Book Free Strategy Session
+                                Request a Mini-Audit
                             </Link>
                             <button onClick={() => scrollTo('how-it-works')} className="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-lg hover:bg-white hover:text-deep-navy transition-colors duration-300">
-                                See How It Works
+                                See What We Check
                             </button>
                         </div>
                     </motion.div>
@@ -224,8 +224,8 @@ const HomePage: React.FC = () => {
             {/* 7. Final CTA Section */}
             <section className="bg-gradient-to-tr from-electric-teal to-deep-navy text-white py-16 md:py-24">
                  <div className="container mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">Ready to Automate Your Business?</h2>
-                    <p className="text-lg md:text-xl text-gray-200 mb-8">Book a free, no-obligation 20-minute strategy session to discover how much time and money you could be saving with AI automation.</p>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">Ready for a simple outside-eye review?</h2>
+                    <p className="text-lg md:text-xl text-gray-200 mb-8">ArioLabs helps small service businesses clean up the path from first inquiry to next step — contact forms, booking pages, follow-up messages, and simple trackers. No call needed.</p>
                      <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
                         <InlineWidget 
                             url="https://calendly.com/ariolabs/ai-consultation-ph"
