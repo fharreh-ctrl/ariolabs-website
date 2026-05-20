@@ -117,8 +117,8 @@ const HomePage: React.FC = () => {
             {/* 3. Services Overview */}
             <SectionWrapper className="py-16 md:py-24 bg-white" id="services">
                 <div className="text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading text-deep-navy mb-4">Choose Your Path</h2>
-                    <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">Select your region to see pricing and services tailored for you.</p>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading text-deep-navy mb-4">Who This Is For</h2>
+                    <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">Small service businesses in the U.S. and PH who want a quick outside-eye review of how inquiries actually move through their system.</p>
                     <div className="flex justify-center space-x-4 mb-12">
                         <Link to="/us-businesses" className="bg-deep-navy text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors">🇺🇸 U.S. Businesses</Link>
                         <Link to="/ph-businesses" className="bg-deep-navy text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors">🇵🇭 PH Businesses</Link>
@@ -151,15 +151,15 @@ const HomePage: React.FC = () => {
             {/* 4. How It Works Section */}
             <SectionWrapper className="py-16 md:py-24 bg-soft-gray" id="how-it-works">
                 <div className="text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading text-deep-navy mb-16">How It Works in 4 Simple Steps</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading text-deep-navy mb-16">How the Mini-Audit Works</h2>
                     <div className="relative">
                         <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-300 -translate-y-1/2"></div>
                         <div className="grid md:grid-cols-4 gap-8">
                             {[
-                                { step: 1, title: "Book a Call", desc: "Schedule a free strategy session to discuss your challenges and goals." },
-                                { step: 2, title: "Get Your Blueprint", desc: "We map out a custom automation plan tailored to your specific business needs." },
-                                { step: 3, title: "We Build It", desc: "Our team builds, tests, and deploys your new automated workflows in just a few days." },
-                                { step: 4, title: "You Scale", desc: "Enjoy your newfound free time and watch your business run more efficiently than ever." },
+                                { step: 1, title: "Request It", desc: "Fill out a short form — no call needed. Tell us your website and how you currently handle inquiries." },
+                                { step: 2, title: "We Review", desc: "We go through your contact form, booking page, and follow-up flow as an outside eye." },
+                                { step: 3, title: "You Get the Note", desc: "We send a 1-page mini-audit with 3 practical fixes — clear, specific, and ready to act on." },
+                                { step: 4, title: "Optional Quick Fix", desc: "If you want help implementing, we can handle one small fix for you — no large commitment." },
                             ].map(item => (
                                 <div key={item.step} className="text-center z-10">
                                     <div className="mx-auto w-16 h-16 rounded-full bg-electric-teal text-white flex items-center justify-center font-bold text-2xl mb-4">{item.step}</div>
@@ -170,7 +170,7 @@ const HomePage: React.FC = () => {
                         </div>
                     </div>
                     <Link to="/schedule" className="inline-block mt-16 bg-electric-teal text-white font-bold py-4 px-8 rounded-lg hover:bg-light-teal hover:text-deep-navy transition-all duration-300 transform hover:scale-105">
-                        Ready to Start?
+                        Request a Mini-Audit
                     </Link>
                 </div>
             </SectionWrapper>
